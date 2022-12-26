@@ -23,8 +23,8 @@
   </head>
   <body class="position-relative">
     <div class="wrapper">
-      <header>
-        <nav class="navbar navbar-expand-md navbar-light container-xl">
+      <header class="bg-light">
+        <nav class="navbar navbar-expand-md navbar-light container-md">
           <a href="./" class="navbar-brand ms-2">Stay Home</a>
           <button
             class="navbar-toggler me-2"
@@ -37,6 +37,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- mobile-menu -->
           <div
             class="collapse navbar-collapse bg-light px-2 mobile-menu"
             id="toggleMobileMenu"
@@ -56,26 +57,63 @@
         </nav>
       </header>
       <main>
-        <!-- jumbotron -->
-        <div class="jumbotron">
-          <img
-            src="./assets/images/image.png"
-            class=""
-            alt="mountain river landscape"
-          />
-          <div class="container">
-            <div class="">
+        <!-- Hero -->
+        <div class="bg-image py-5">
+          <div
+            class="d-flex justify-content-center align-items-end justify-content-md-start h-100 container-md"
+          >
+            <div class="text-dark">
               <a
-                class="py-2 px-4 d-inline-block bg-black text-decoration-none"
+                class="view-specials-btn px-4 py-2 rounded-1 text-decoration-none text-white"
                 href="#"
                 role="button"
-                >Learn more</a
+                >View specials</a
               >
+              <p
+                class="lead rounded-1 d-none d-md-block p-2 my-4 transparent-bg-btn-custom-light"
+              >
+                Vestibulum tempus, massa vel congue faucibus, velit nibh
+                faucibus tellus, at dictum odio nisi ut lacus. Curabitur
+                consequat eros quam, at volutpat eros accumsan in. Sed mattis
+                lectus euismod pretium tincidunt. Nam placerat pulvinar
+                fermentum. Morbi et est dolor.
+              </p>
             </div>
           </div>
         </div>
+        <!-- Hero -->
 
-        <section>test section</section>
+        <section class="container">
+          <h1 class="text-center py-2">Dont Go Anywhere</h1>
+          <!-- list of cards -->
+          <ul class="p-0 container">
+            <div class="row gx-2">
+              <!-- card -->
+              <li class="card col my-3">
+                <h5 class="card-header py-3">Featured</h5>
+                <div class="card-body">
+                  <p class="card-text">
+                    Cras mattis blandit tortor in consectetur. Maecenas semper
+                    lobortis ligula, sed porttitor augue aliquet vitae. Ut ut
+                    fermentum mauris. Nullam porttitor elementum risus, eu
+                    mollis justo molestie at. Ut suscipit nec lacus sed iaculis.
+                  </p>
+                </div>
+              </li>
+              <!-- card -->
+              <li class="card col my-3">
+                <h5 class="card-header py-3">Featured</h5>
+                <div class="card-body">
+                  <p class="card-text">
+                    Ut ut fermentum mauris. Nullam porttitor elementum risus, eu
+                    mollis justo molestie at. Ut suscipit nec lacus sed iaculis.
+                    Ut rutrum quam non sapien pharetra,
+                  </p>
+                </div>
+              </li>
+            </div>
+          </ul>
+        </section>
       </main>
     </div>
 
