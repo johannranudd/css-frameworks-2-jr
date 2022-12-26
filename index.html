@@ -14,18 +14,36 @@
     <title>Stay Home</title>
   </head>
   <body>
-    <header>
-      <h1>test 1</h1>
-      <h2>test 2</h2>
-    </header>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla in
-      architecto fuga tempore libero deleniti animi quisquam distinctio! Est,
-      odit optio ipsam recusandae inventore dolorum quis fugit labore iste et.
-    </p>
-    <button class="btn btn-primary">click</button>
-    <button class="btn btn-secondary">click</button>
-
+    <div class="container">
+      <!-- d-flex justify-content-between -->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a href="./" class="navbar-brand">Stay Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#toggleMobileMenu"
+          aria-controls="toggleMobileMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
+          <ul class="navbar-nav ms-auto">
+            <li>
+              <a href="./" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="./products.html" class="nav-link">Products</a>
+            </li>
+            <li>
+              <a href="./login.html" class="nav-link">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
