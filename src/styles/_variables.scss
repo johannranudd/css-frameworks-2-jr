@@ -3,6 +3,9 @@ $secondary: #81cfc2;
 $dark: #333;
 $light: #fff;
 $info: #8d8d8d;
+$light-grey: #cecece;
+$myCustom: #b00b69;
+$third-color: #efef94;
 
 $theme-colors: (
   "primary": $primary,
@@ -10,9 +13,9 @@ $theme-colors: (
   "dark": $dark,
   "light": $light,
   "info": $info,
-  "myCustom": #b00b69,
-  "third-color": #efef94,
-  "test": #b00b69,
+  "light-grey": $light-grey,
+  "myCustom": $myCustom,
+  "third-color": $third-color,
 ) !default;
 
 $position-values: (
