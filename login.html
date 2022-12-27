@@ -51,7 +51,63 @@
       </header>
       <!-- main content -->
       <main>
-        <form>
+        <h1 class="text-light text-center my-5">Login</h1>
+        <div class="container mt-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+              <div class="card px-5 py-5" id="form1">
+                <div class="form-data" v-if="!submitted">
+                  <div class="forms-inputs mb-4">
+                    <input
+                      autocomplete="off"
+                      type="text"
+                      placeholder="Name"
+                      aria-label="name"
+                      class="w-100 p-2"
+                    />
+                  </div>
+                  <div class="forms-inputs mb-4">
+                    <input
+                      autocomplete="off"
+                      type="email"
+                      placeholder="Email"
+                      aria-label="email"
+                      class="w-100 p-2"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <button
+                      v-on:click.stop.prevent="submit"
+                      class="btn btn-dark w-100"
+                    >
+                      Login
+                    </button>
+                  </div>
+                </div>
+                <div class="mb-3 form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="rememberCheck"
+                  />
+                  <label class="form-check-label" for="rememberCheck"
+                    >Remember me</label
+                  >
+                </div>
+                <!-- <div class="success-data" v-else>
+                  <div class="text-center d-flex flex-column">
+                    <i class="bx bxs-badge-check"></i>
+                    <span class="text-center fs-1"
+                      >You have been logged in <br />
+                      Successfully</span
+                    >
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <form>
           <div class="mb-3">
             <label for="inputEmail" class="form-label">Email address</label>
             <input
@@ -81,7 +137,7 @@
               >
             </div>
           </div>
-        </form>
+        </form> -->
         <!-- <form>
           <div class="form-group">
             <label for="inputEmail">Email</label>
