@@ -21,7 +21,7 @@
   <body class="position-relative">
     <div class="wrapper">
       <header class="bg-light">
-        <nav class="navbar navbar-expand-md navbar-light container-md">
+        <nav class="navbar navbar-expand-md navbar-light mw-1140 container-md">
           <a href="./" class="navbar-brand ms-3">Stay Home</a>
           <button
             class="navbar-toggler me-2"
@@ -54,11 +54,11 @@
         </nav>
       </header>
       <!-- main content -->
-      <main class="px-2">
+      <main class="px-2 mw-1140 mx-auto mb-5">
         <h1 class="text-center py-5 text-light">Products</h1>
         <!-- pagination -->
         <nav
-          class="container d-flex justify-content-center justify-content-md-start"
+          class="container mb-5 d-flex justify-content-center justify-content-md-start"
           aria-label="Page navigation"
         >
           <ul class="pagination">
@@ -76,8 +76,10 @@
             </li>
           </ul>
         </nav>
-        <div class="container">
-          <div class="product-list row">
+        <div class="container mb-5">
+          <div
+            class="product-list row justify-content-between flex-wrap mx-auto"
+          >
             <div class="col-6 col-sm-4 col-md-3 col-xl-2">
               <p>Product</p>
             </div>
@@ -116,12 +118,32 @@
             </div>
           </div>
         </div>
+        <!-- pagination -->
+        <nav
+          class="container d-flex justify-content-center justify-content-md-start"
+          aria-label="Page navigation"
+        >
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link last-link" href="#">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
       </main>
     </div>
 
     <!-- footer -->
     <footer class="p-2 bg-light position-relative p-md-0">
-      <div class="container text-center">
+      <div class="container text-center mw-1140">
         <div
           class="d-md-flex justify-content-md-between align-items-md-center text-info"
         >
