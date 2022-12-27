@@ -1,0 +1,75 @@
+@import "./variables";
+
+body {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  min-height: 100vh !important;
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+  background: $primary !important;
+}
+
+img {
+  width: 100%;
+}
+
+.hoverBtn {
+  background-color: $dark;
+  color: $light;
+  &:hover {
+    background-color: $light;
+    color: $dark;
+  }
+}
+
+.active {
+  color: $secondary !important;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  @media (min-width: 768px) {
+    position: static;
+  }
+}
+
+.navbar-toggler {
+  border: none !important;
+  background: transparent !important;
+  &:hover {
+    opacity: 0.7;
+  }
+  &:focus {
+    color: transparent;
+    border: 1px solid $info !important;
+  }
+}
+
+.bg-image {
+  background: no-repeat center/cover url("../../assets/images/image.png");
+  height: 251px;
+  @media (min-width: 768px) {
+    height: 462px;
+  }
+}
+
+.view-specials-btn {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+  &:hover {
+    background: rgba(0, 0, 0, 1);
+  }
+  @media (min-width: 758px) {
+    font-size: 1.2rem;
+  }
+}
+.transparent-bg-btn-custom-light {
+  background: rgba(250, 250, 250, 0.8);
+  transition: 0.3s;
+  &:hover {
+    background: rgba(250, 250, 250, 1);
+  }
+}

@@ -1,0 +1,27 @@
+$primary: #8dbde7;
+$secondary: #81cfc2;
+$dark: #333;
+$light: #fff;
+$info: #8d8d8d;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "light": $light,
+  "info": $info,
+  "myCustom": #b00b69,
+  "third-color": #efef94,
+  "test": #b00b69,
+) !default;
+
+$position-values: (
+  0: 0,
+  50: 50%,
+  60: 60%,
+  70: 70%,
+  75: 75%,
+  80: 80%,
+  85: 85%,
+  100: 100%,
+);
