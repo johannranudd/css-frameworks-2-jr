@@ -58,7 +58,7 @@
         <h1 class="text-light text-center my-5">Login</h1>
         <form action="./" id="loginForm" class="container mt-5">
           <div class="row d-flex justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-10 col-lg-6 col-xl-5">
               <div class="card px-5 py-5" id="form1">
                 <div class="form-data" v-if="!submitted">
                   <div class="forms-inputs mb-4">
@@ -79,26 +79,30 @@
                       class="w-100 p-2 rounded-1 border-secondary shadow-none"
                     />
                   </div>
-                  <div class="mb-3">
-                    <!-- data-mdb-ripple-color="light" -->
-                    <button
-                      v-on:click.stop.prevent="submit"
-                      class="hoverBtn p-2 rounded-1 w-100"
-                    >
-                      Login
-                    </button>
+                  <div
+                    class="d-md-flex flex-row-reverse justify-content-between"
+                  >
+                    <div class="mb-3 w-100">
+                      <button
+                        v-on:click.stop.prevent="submit"
+                        class="hoverBtn p-2 rounded-1 w-100"
+                      >
+                        Login
+                      </button>
+                    </div>
+                    <div class="mb-3 form-check text-info w-100">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="rememberCheck"
+                      />
+                      <label class="form-check-label" for="rememberCheck"
+                        >Remember me</label
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="mb-3 form-check text-info">
-                  <input
-                    type="checkbox"
-                    class="form-check-input"
-                    id="rememberCheck"
-                  />
-                  <label class="form-check-label" for="rememberCheck"
-                    >Remember me</label
-                  >
-                </div>
+
                 <!-- <div class="success-data" v-else>
                   <div class="text-center d-flex flex-column">
                     <i class="bx bxs-badge-check"></i>
