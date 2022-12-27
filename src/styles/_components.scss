@@ -1,21 +1,5 @@
 @import "./variables";
 
-body {
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: space-between !important;
-  min-height: 100vh !important;
-  max-width: 100vw !important;
-  overflow-x: hidden !important;
-  background: $primary !important;
-  // font-family: "Gentium Book Basic", serif;
-  font-family: "Open Sans", sans-serif, "Gentium Book Basic", serif !important;
-}
-
-img {
-  width: 100%;
-}
-
 .hoverBtn {
   background: black;
   color: white;
