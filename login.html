@@ -10,6 +10,10 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
         crossorigin="anonymous"
         /> -->
+    <script
+      src="https://kit.fontawesome.com/7246593e30.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./src/styles/styles.css" />
 
     <title>Login</title>
@@ -52,7 +56,7 @@
       <!-- main content -->
       <main>
         <h1 class="text-light text-center my-5">Login</h1>
-        <div class="container mt-5">
+        <form action="./" id="loginForm" class="container mt-5">
           <div class="row d-flex justify-content-center">
             <div class="col-md-6">
               <div class="card px-5 py-5" id="form1">
@@ -63,7 +67,7 @@
                       type="text"
                       placeholder="Name"
                       aria-label="name"
-                      class="w-100 p-2"
+                      class="w-100 p-2 rounded-1 border-secondary shadow-none"
                     />
                   </div>
                   <div class="forms-inputs mb-4">
@@ -72,19 +76,20 @@
                       type="email"
                       placeholder="Email"
                       aria-label="email"
-                      class="w-100 p-2"
+                      class="w-100 p-2 rounded-1 border-secondary shadow-none"
                     />
                   </div>
                   <div class="mb-3">
+                    <!-- data-mdb-ripple-color="light" -->
                     <button
                       v-on:click.stop.prevent="submit"
-                      class="btn btn-dark w-100"
+                      class="hoverBtn p-2 rounded-1 w-100"
                     >
                       Login
                     </button>
                   </div>
                 </div>
-                <div class="mb-3 form-check">
+                <div class="mb-3 form-check text-info">
                   <input
                     type="checkbox"
                     class="form-check-input"
@@ -106,69 +111,11 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- <form>
-          <div class="mb-3">
-            <label for="inputEmail" class="form-label">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              aria-describedby="emailHelp"
-            />
-            <div id="emailHelp" class="form-text">
-              We'll never share your email with anyone else.
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="inputPassword" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword" />
-          </div>
-          <div class="">
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <div class="mb-3 form-check">
-              <input
-                type="checkbox"
-                class="form-check-input"
-                id="rememberCheck"
-              />
-              <label class="form-check-label" for="rememberCheck"
-                >Remember me</label
-              >
-            </div>
-          </div>
-        </form> -->
-        <!-- <form>
-          <div class="form-group">
-            <label for="inputEmail">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="inputEmail"
-              placeholder="Email"
-            />
-          </div>
-          <div class="form-group">
-            <label for="inputPassword">Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="inputPassword"
-              placeholder="Password"
-            />
-          </div>
-          <div class="form-group">
-            <label class="form-check-label"
-              ><input type="checkbox" /> Remember me</label
-            >
-          </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </form> -->
+        </form>
       </main>
     </div>
 
     <!-- footer -->
-
     <footer class="p-2 bg-light position-relative p-md-0">
       <div class="container text-center">
         <div
