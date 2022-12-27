@@ -70,7 +70,7 @@
                 >View specials</a
               >
               <p
-                class="lead rounded-1 d-none d-md-block p-2 my-4 transparent-bg-btn-custom-light"
+                class="rounded-1 d-none d-md-block p-4 my-4 transparent-bg-btn-custom-light"
               >
                 Vestibulum tempus, massa vel congue faucibus, velit nibh
                 faucibus tellus, at dictum odio nisi ut lacus. Curabitur
@@ -84,52 +84,56 @@
         <!-- Hero -->
 
         <section class="container">
-          <h1 class="text-center py-2">Dont Go Anywhere</h1>
+          <h1 class="text-center text-light py-4">Dont Go Anywhere</h1>
           <!-- list of cards -->
-          <ul class="p-0 container">
-            <div class="row gx-2">
-              <!-- card -->
-              <li class="card col my-3">
-                <h5 class="card-header py-3">Featured</h5>
-                <div class="card-body">
-                  <p class="card-text">
-                    Cras mattis blandit tortor in consectetur. Maecenas semper
-                    lobortis ligula, sed porttitor augue aliquet vitae. Ut ut
-                    fermentum mauris. Nullam porttitor elementum risus, eu
-                    mollis justo molestie at. Ut suscipit nec lacus sed iaculis.
-                  </p>
-                </div>
-              </li>
-              <!-- card -->
-              <li class="card col my-3">
-                <h5 class="card-header py-3">Featured</h5>
-                <div class="card-body">
-                  <p class="card-text">
-                    Ut ut fermentum mauris. Nullam porttitor elementum risus, eu
-                    mollis justo molestie at. Ut suscipit nec lacus sed iaculis.
-                    Ut rutrum quam non sapien pharetra,
-                  </p>
-                </div>
-              </li>
+          <div class="p-0 mb-5 row justify-content-between gx-0 gap-4">
+            <!-- card -->
+            <div class="card bg-light col-sm-12 col-md">
+              <h5 class="card-header py-3 bg-secondary">Heading</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Cras mattis blandit tortor in consectetur. Maecenas semper
+                  lobortis ligula, sed porttitor augue aliquet vitae. Ut ut
+                  fermentum mauris. Nullam porttitor elementum risus, eu mollis
+                  justo molestie at. Ut suscipit nec lacus sed iaculis.
+                </p>
+              </div>
             </div>
-          </ul>
+            <!-- card -->
+            <div class="card col-sm-12 col-md">
+              <h5 class="card-header py-3 bg-secondary">Heading</h5>
+              <div class="card-body">
+                <p class="card-text">
+                  Ut ut fermentum mauris. Nullam porttitor elementum risus, eu
+                  mollis justo molestie at. Ut suscipit nec lacus sed iaculis.
+                  Ut rutrum quam non sapien pharetra,
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
 
     <!-- footer -->
-    <footer class="bg-light">
-      <div class="container text-info">
-        <div class="">Tel: 123 456 789 | info@email.com</div>
-        <div>
-          <a href="https://www.linkedin.com/">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/">
-            <i class="fab fa-instagram"></i>
-          </a>
+
+    <footer class="p-2 bg-light position-relative p-md-0">
+      <div class="container text-center">
+        <div
+          class="d-md-flex justify-content-md-between align-items-md-center text-info"
+        >
+          <p class="m-0 py-4">Tel: 123 456 789 | info@email.com</p>
+
+          <div class="position-absolute top-50 start-50 translate-middle">
+            <a href="https://www.linkedin.com/">
+              <i class="fa-brands fa-linkedin fa-lg mx-2"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fab fa-instagram fa-lg mx-2"></i>
+            </a>
+          </div>
+          <p class="m-0 py-4">Copyright 2020</p>
         </div>
-        <p>Copyright 2020</p>
       </div>
     </footer>
     <!-- JS -->
@@ -138,6 +142,5 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="./js/index.js"></script> -->
   </body>
 </html>
